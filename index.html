@@ -143,7 +143,7 @@
       <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M12 2L2 12l10 10 10-10L12 2z"/></svg>
     </div>
     <span class="h-title">Gemini Chat</span>
-    <span class="model-chip">gemini-1.5-flash</span>
+    <span class="model-chip">gemini-2.0-flash-lite</span>
   </div>
   <div>
     <div class="status-pill">
@@ -187,7 +187,7 @@
 
 <script>
   let API_KEY = '', history = [], loading = false;
-  const GEMINI = k => `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${k}`;
+  const GEMINI = k => `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${k}`;
   const $ = id => document.getElementById(id);
   const msgs = $('messages'), empty = $('empty-state'), inp = $('user-input'), btn = $('send-btn');
 
